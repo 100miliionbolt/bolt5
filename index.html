@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2027년 4월 28일부터 3박 4일, 대구 출발 제주 가족여행 일정, 지도, 예상 비용, 준비물">
+<meta property="og:title" content="제주 가족 3박4일">
+<meta property="og:description" content="하얏트·신라 2박·1박, 동물과 자동차 노는 날, 회와 흑돼지. 일정·지도·비용·준비물.">
+<title>제주 가족 3박4일</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400&display=swap">
+<style>
+/* Layout: 크림 바탕 + 코랄 포인트 + 짙은 갈색 표면. 크림 → 카드 → 코랄 합계 → 어두운 할 일 → 어두운 푸터 순서로 리듬을 만든다. 폰 기준, 큰 글자. */
+:root {
+  --bg: #faf9f5;
+  --soft: #f5f0e8;
+  --card: #efe9de;
+  --strong: #e8e0d2;
+  --fg: #141413;
+  --body: #3d3d3a;
+  --muted: #6c6a64;
+  --muted-soft: #8e8b82;
+  --line: #e6dfd8;
+  --primary: #cc785c;
+  --primary-active: #a9583e;
+  --accent: #a9583e;
+  --teal: #5db8a6;
+  --amber: #e8a55a;
+  --dark: #181715;
+  --dark-elev: #252320;
+  --on-dark: #faf9f5;
+  --on-dark-soft: #a09d96;
+  --water: #d9ece7;
+  --land: #f5f0e8;
+  --d1: #2f8a7a;
+  --d2: #cc785c;
+  --d3: #b9821f;
+  --d4: #3b4a5c;
+  --hotel: #141413;
+  --font: Inter, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Roboto, sans-serif;
+  --font-display: "Tiempos Headline", "Cormorant Garamond", "Noto Serif KR", Garamond, "Times New Roman", serif;
+  color-scheme: light;
+}
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--body); font-family: var(--font); line-height: 1.65; font-size: 17px; }
+.wrap { max-width: 1000px; margin: 0 auto; padding-block: 24px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2 { font-family: var(--font-display); font-weight: 400; color: var(--fg); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.4rem, 10vw, 4rem); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 10px; }
+h2 { font-size: clamp(1.8rem, 6.5vw, 2.5rem); line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 6px; }
+h3 { font-size: 1.1rem; margin: 0 0 6px; font-weight: 500; color: var(--fg); line-height: 1.4; }
+.day h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.45rem; letter-spacing: -0.01em; line-height: 1.25; }
+p { margin: 0 0 8px; }
+section { margin-top: 64px; }
+.sub { color: var(--muted); margin-bottom: 18px; max-width: 62ch; }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+.cap { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
+
+.hero { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-bottom: 22px; background: var(--bg); }
+.hero svg { display: block; width: 100%; height: auto; max-height: 260px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px 20px; margin: 22px 0 0; padding: 18px 0; border-block: 1px solid var(--line); }
+.facts dt { font-size: 0.88rem; color: var(--muted); }
+.facts dd { margin: 0; font-weight: 500; color: var(--fg); }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
+.nav a { text-decoration: none; background: var(--bg); border: 1px solid var(--line); color: var(--fg); padding: 8px 16px; border-radius: 8px; font-weight: 500; font-size: 0.95rem; min-height: 44px; display: inline-flex; align-items: center; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.chip { font: inherit; font-size: 1rem; font-weight: 500; border: 1px solid var(--line); background: var(--bg); color: var(--muted); padding: 8px 16px; border-radius: 8px; cursor: pointer; min-height: 46px; }
+.chip[aria-pressed="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+.chip i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+.mapbox { background: var(--water); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.mapbox svg { display: block; width: 100%; height: auto; }
+.mapnote { font-size: 0.85rem; color: var(--muted); margin: 8px 2px 0; }
+.stops { list-style: none; padding: 0; margin: 14px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+.stops li { background: var(--card); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.stops .top { display: flex; gap: 10px; align-items: center; }
+.pin { flex: none; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 0.78rem; font-weight: 700; display: grid; place-items: center; background: var(--pc); }
+.stops b { overflow-wrap: anywhere; font-weight: 500; color: var(--fg); }
+.stops small { display: block; color: var(--muted); margin: 4px 0 6px; font-size: 0.9rem; }
+.links { display: flex; gap: 14px; font-size: 0.9rem; }
+
+.day { background: var(--card); border-radius: 12px; padding: 22px 20px 16px; margin-bottom: 16px; border-top: 5px solid var(--dc); }
+.day header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 12px; }
+.tag { font-size: 0.8rem; font-weight: 500; color: var(--accent); letter-spacing: 0.08em; }
+.pace { font-size: 0.8rem; background: var(--bg); border-radius: 999px; padding: 2px 12px; color: var(--muted); font-weight: 500; }
+.tl { list-style: none; margin: 0; padding: 0; }
+.tl li { display: grid; grid-template-columns: 74px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid var(--strong); }
+.tl li:first-child { border-top: 0; }
+.tl time { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 500; font-size: 0.9rem; padding-top: 2px; }
+.tl div { min-width: 0; color: var(--fg); }
+.tl small { font-size: 0.9rem; color: var(--muted); display: block; }
+.tip { margin-top: 10px; padding: 12px 14px; background: var(--bg); border-radius: 8px; font-size: 0.92rem; color: var(--body); }
+.ph { margin: 0 0 12px; }
+.ph img { display: block; width: 100%; height: auto; max-height: 260px; object-fit: cover; border-radius: 12px; background: var(--strong); }
+.ph figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 12px; }
+.gallery .ph { margin: 0; }
+.cafebox { margin-top: 12px; background: var(--bg); border-radius: 8px; padding: 12px 14px; }
+.cafebox h3 { font-size: 0.95rem; color: var(--accent); }
+.cafebox ul { margin: 4px 0 0; padding-left: 1.1em; font-size: 0.92rem; }
+.cafebox li { margin-bottom: 4px; }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.box { background: var(--card); border-radius: 12px; padding: 20px 22px; min-width: 0; }
+.box ul { margin: 6px 0 0; padding-left: 1.2em; }
+.box li { margin-bottom: 4px; }
+
+.callout { background: var(--primary); color: #fff; border-radius: 12px; padding: 32px 24px; margin-bottom: 18px; }
+.callout .cap { opacity: 0.9; }
+.callout .big { font-family: var(--font-display); font-size: clamp(2rem, 8vw, 3rem); line-height: 1.15; letter-spacing: -0.015em; margin: 6px 0 4px; }
+.callout p:last-child { margin: 0; opacity: 0.95; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.95rem; }
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.82rem; font-weight: 500; color: var(--muted); background: var(--soft); }
+tr:last-child td { border-bottom: 0; }
+td.num { white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 500; color: var(--fg); }
+tr.total td { background: var(--strong); font-weight: 500; color: var(--fg); }
+h3.sec { margin: 24px 0 8px; }
+
+.dark { background: var(--dark); color: var(--on-dark); border-radius: 12px; padding: 32px 24px; }
+.dark h2 { color: var(--on-dark); }
+.dark .sub { color: var(--on-dark-soft); }
+.dark .todo { margin: 14px 0 0; padding: 0; list-style: none; counter-reset: t; }
+.dark .todo li { counter-increment: t; background: var(--dark-elev); border-radius: 8px; padding: 14px 16px 14px 56px; margin-bottom: 10px; position: relative; color: var(--on-dark); }
+.dark .todo li::before { content: counter(t); position: absolute; left: 16px; top: 12px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; font-weight: 500; display: grid; place-items: center; }
+.dark .todo b { font-weight: 500; }
+
+.pack { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.pack label { display: flex; gap: 12px; align-items: flex-start; padding: 7px 0; cursor: pointer; }
+.pack input { flex: none; width: 24px; height: 24px; margin-top: 2px; accent-color: var(--primary); }
+.pack input:checked + span { color: var(--muted-soft); text-decoration: line-through; }
+.progress { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+
+.site-foot { background: var(--dark); color: var(--on-dark-soft); padding-block: 40px 56px; font-size: 0.9rem; }
+.site-foot .inner { max-width: 1000px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.site-foot strong { color: var(--on-dark); font-family: var(--font-display); font-weight: 500; font-size: 1.3rem; display: block; margin-bottom: 8px; }
+.site-foot summary { cursor: pointer; color: var(--on-dark); margin-top: 12px; }
+.site-foot ul { padding-left: 1.2em; margin: 8px 0 0; }
+.site-foot li { margin-bottom: 2px; }
+@media (max-width: 480px) { .tl li { grid-template-columns: 62px 1fr; gap: 8px; } .dark, .callout { padding: 26px 18px; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="hero" aria-hidden="true">
+      <svg viewBox="0 0 400 210" preserveAspectRatio="xMidYMid slice" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="312" cy="58" r="26" stroke="#cc785c" stroke-width="3"/>
+        <path d="M0 160 L110 160 L158 92 Q205 72 252 92 L300 160 L330 160" stroke="#141413" stroke-width="3"/>
+        <path d="M158 92 Q205 104 252 92" stroke="#141413" stroke-width="2"/>
+        <path d="M0 176 q25 -10 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" stroke="#141413" stroke-width="2.5"/>
+        <path d="M0 194 q25 -10 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" stroke="#cc785c" stroke-width="2.5"/>
+        <g stroke="#cc785c" stroke-width="3"><circle cx="56" cy="146" r="22"/><circle cx="100" cy="158" r="15"/></g>
+        <path d="M56 124 q10 -14 22 -8 q-6 12 -22 8z M100 143 q8 -10 17 -6 q-5 9 -17 6z" stroke="#141413" stroke-width="2.5"/>
+        <g transform="translate(346 96)" stroke="#141413" stroke-width="3">
+          <path d="M-24 22 Q-24 -2 0 -4 Q24 -2 24 22 Z"/>
+          <ellipse cx="0" cy="40" rx="21" ry="25"/>
+          <circle cx="-8" cy="34" r="3" fill="#141413"/><circle cx="8" cy="34" r="3" fill="#141413"/>
+          <path d="M-7 54 Q0 58 7 54" stroke-width="2.5"/>
+          <rect x="-19" y="62" width="38" height="42" rx="14"/>
+        </g>
+      </svg>
+    </div>
+    <p class="tag" style="color:var(--accent)">2027.4.28(수) ~ 5.1(토) · 어른 2 + 아이 5세·만 2세</p>
+    <h1>제주 가족 3박4일</h1>
+    <p class="sub" style="max-width:62ch">중문의 하얏트 리젠시와 제주 신라호텔에서 쉬면서, 동물 먹이를 주고 자동차를 타고 노는 날을 넣었습니다. 하루는 아이 중심, 하루는 서귀포 관광, 나머지는 여유롭게 보냅니다. 꽃과 정원, 카페도 하루씩 넣었습니다.</p>
+    <dl class="facts">
+      <div><dt>일정</dt><dd>4/28(수) ~ 5/1(토)</dd></div>
+      <div><dt>가는 편</dt><dd>대구공항 09:00</dd></div>
+      <div><dt>오는 편</dt><dd>18:00 (오후 6시)</dd></div>
+      <div><dt>숙소</dt><dd>하얏트 2박 + 신라 1박</dd></div>
+      <div><dt>차량</dt><dd>렌터카 + 카시트 2개</dd></div>
+      <div><dt>음식</dt><dd>회 · 흑돼지</dd></div>
+    </dl>
+    <nav class="nav" aria-label="바로가기"><a href="#map">지도</a><a href="#plan">일정</a><a href="#food">먹거리</a><a href="#stay">숙소·차량</a><a href="#cost">비용</a><a href="#todo">할 일</a><a href="#pack">준비물</a></nav>
+  </header>
+
+  <section id="map">
+    <h2>가는 곳 지도</h2>
+    <p class="sub">일차 버튼을 누르면 그날 동선만 보입니다. 점 위의 번호는 방문 순서입니다.</p>
+    <div class="chips" id="chips" role="group" aria-label="일차 선택"></div>
+    <div class="mapbox">
+      <svg id="svg" viewBox="0 0 640 480" role="img" aria-label="제주도 약도: 공항, 중문 호텔, 서귀포 방면 방문지 위치"></svg>
+    </div>
+    <p class="mapnote">약도입니다. 선은 이동 방향만 나타내며 실제 도로가 아닙니다. 아래 링크로 네이버·카카오 지도에서 정확한 위치를 확인하세요.</p>
+    <ul class="stops" id="stops"></ul>
+  </section>
+
+  <section id="plan">
+    <h2>일정</h2>
+    <p class="sub">이동 시간은 평소 도로 기준 대략치입니다. 2일차에 동물 먹이 주기와 자동차 체험을 넣었고, 3일차 휴애리(꽃과 동물), 4일차 여미지식물원(온실과 정원)으로 꽃과 자연을 채웠습니다. 매일 카페를 한 곳 이상 넣었습니다.</p>
+
+    <article class="day" style="--dc:var(--d1)">
+      <header><span class="tag">1일차 · 4/28(수)</span><h3 style="margin:0">도착 · 바다 보며 천천히</h3><span class="pace">여유</span></header>
+      <figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hyatt_Regency_hotel,_Jeju_Island,_South_Korea-12April2011.jpg?width=640" alt="하얏트 리젠시 제주"><figcaption>오늘 묵는 하얏트 리젠시 제주 (중문)</figcaption></figure>
+      <ul class="tl">
+        <li><time>09:00</time><div>대구공항 출발<small>만 2세 아이는 별도 좌석이 필요합니다. 아이 신분 확인 서류를 챙기세요.</small></div></li>
+        <li><time>10:10</time><div>제주공항 도착 · 렌터카 수령<small>카시트 장착 상태를 직접 확인하세요. 셔틀 대기로 40분 정도 잡습니다.</small></div></li>
+        <li><time>11:30</time><div>도두 무지개해안도로 산책<small>공항에서 10분 거리. 해안 데크를 가볍게 걷습니다.</small></div></li>
+        <li><time>12:20</time><div>점심: 도두항 주변 횟집<small>회가 어려운 아이를 위해 대체 메뉴가 있는 집을 고르세요.</small></div></li>
+        <li><time>13:30</time><div>카페: 공항 근처 바닷가 카페<small>비행기가 가까이 지나가서 아이가 좋아할 수 있습니다.</small></div></li>
+        <li><time>14:30</time><div>중문으로 이동 (약 50분)<small>아이들은 차에서 낮잠.</small></div></li>
+        <li><time>15:30</time><div>하얏트 리젠시 제주 체크인 · 휴식</div></li>
+        <li><time>18:30</time><div>저녁: 호텔 레스토랑 또는 룸서비스</div></li>
+      </ul>
+      <div class="cafebox"><h3>1일차 카페</h3><ul><li><b>듀 포레 제주공항점</b> (서해안로 579) 공항 근처 바닷가 카페, 3층 건물, 비행기 구경. <a href="https://map.naver.com/p/search/%EB%93%80%20%ED%8F%AC%EB%A0%88%20%EC%A0%9C%EC%A3%BC%EA%B3%B5%ED%95%AD%EC%A0%90" target="_blank" rel="noopener">지도</a></li></ul></div>
+    </article>
+
+    <article class="day" style="--dc:var(--d2)">
+      <header><span class="tag">2일차 · 4/29(목)</span><h3 style="margin:0">동물과 자동차 노는 날</h3><span class="pace">아이 중심</span></header>
+      <div class="gallery"><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Osulloc_Tea_Museum_%26_Fields,_Jeju.jpg?width=640" alt="오설록 티뮤지엄"><figcaption>오설록 티뮤지엄 (안덕면)</figcaption></figure></div>
+      <ul class="tl">
+        <li><time>09:00</time><div>호텔 조식 후 출발</div></li>
+        <li><time>10:00</time><div>세계자동차&amp;피아노박물관 (안덕면, 약 25분)<small>사슴과 토끼 먹이 주기, 어린이 무료 교통 체험이 있고 체험을 마치면 어린이 국제 운전 면허증을 발급해 준다고 안내됩니다. 유모차 보관소가 있다고 소개됩니다. 만 2세 참여 가능 여부는 방문 전 확인하세요.</small></div></li>
+        <li><time>12:15</time><div>점심: 안덕면 인근 식당<small>덮밥, 국수처럼 아이가 먹기 쉬운 메뉴.</small></div></li>
+        <li><time>13:30</time><div>뽀로로앤타요 테마파크 제주 (안덕면, 약 10분)<small>타요 미니트랙라이더, 뚜뚜의 스피드트랙, 뽀로로기차 같은 탈것이 안내됩니다. 5세 미만이 놀 수 있는 공간도 있습니다. 탈것별 나이·키 제한은 확인하세요.</small></div></li>
+        <li><time>15:45</time><div>오설록 티뮤지엄 · 녹차밭 산책 · 카페<small>박물관과 차밭 입장은 무료로 안내됩니다. 녹차 소프트 아이스크림과 말차 라떼를 판매합니다. 유모차 이동은 가능하지만 대여는 없다고 소개됩니다.</small></div></li>
+        <li><time>17:30</time><div>호텔 복귀 · 휴식</div></li>
+        <li><time>18:30</time><div>저녁: 흑돼지 (중문 또는 서귀포 방면)<small>아이 자리와 불판 거리를 예약 때 물어보세요.</small></div></li>
+      </ul>
+      <div class="cafebox"><h3>2일차 카페</h3><ul><li><b>오설록 티뮤지엄 카페</b> (안덕면 신화역사로 15) 녹차밭 옆, 녹차 소프트 아이스크림, 말차 라떼. <a href="https://map.naver.com/p/search/%EC%98%A4%EC%84%A4%EB%A1%9D%20%ED%8B%B0%EB%AE%A4%EC%A7%80%EC%97%84" target="_blank" rel="noopener">지도</a></li><li><b>제주그림카페</b> (제주항공우주박물관 4층) 실내 카페. 기저귀 교환대와 수유실은 없다고 안내됩니다. 오설록 대신 갈 때만. <a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5%EC%9A%B0%EC%A3%BC%EB%B0%95%EB%AC%BC%EA%B4%80%20%EC%A0%9C%EC%A3%BC%EA%B7%B8%EB%A6%BC%EC%B9%B4%ED%8E%98" target="_blank" rel="noopener">지도</a></li></ul></div>
+      <p class="tip">너무 빡빡하면 뽀로로앤타요나 박물관 중 한 곳을 빼세요. 오설록은 차 안에서 쉬는 아이를 깨우지 않고 아이스크림만 사 가는 식으로도 들를 수 있습니다. 이 두 곳의 사진은 자유롭게 쓸 수 있는 것을 찾지 못했습니다. 문의: 박물관 064-792-3000, 테마파크 064-742-8555 (검색 결과 기준).</p>
+    </article>
+
+    <article class="day" style="--dc:var(--d3)">
+      <header><span class="tag">3일차 · 4/30(금)</span><h3 style="margin:0">서귀포 한 바퀴 · 꽃과 동물 · 호텔 이동</h3><span class="pace">볼거리 많음</span></header>
+      <ul class="tl">
+        <li><time>09:00</time><div>호텔 조식 · 하얏트 체크아웃<small>짐은 차에 싣고 움직입니다. 하얏트와 신라는 모두 중문에 있어 이동이 짧습니다.</small></div></li>
+        <li><time>10:00</time><div>중문 주상절리대<small>전망 데크까지 짧게 걷습니다.</small></div></li>
+        <li><time>11:00</time><div>새연교 · 새섬 (서귀포, 약 20분)<small>다리를 건너는 가벼운 산책.</small></div></li>
+        <li><time>12:15</time><div>점심: 올레시장 또는 서귀포항 근처 회<small>활어회와 물회, 아이용 구이나 튀김류를 함께 주문하면 편합니다.</small></div></li>
+        <li><time>13:15</time><div>카페: 서귀포 바다 보이는 카페<small>점심 뒤 아이 낮잠이나 쉬는 시간.</small></div></li>
+        <li><time>14:00</time><div>천지연폭포<small>계단이 있어 아기띠가 편합니다. 피곤하면 생략하세요.</small></div></li>
+        <li><time>15:00</time><div><b>휴애리 자연생활공원</b> (남원읍, 약 25분)<small>수국 정원이 4월 중순부터 5월 초에 절정이라고 소개되며 개화 시기는 해마다 달라집니다. 미니돼지, 말, 염소, 토끼 먹이 주기가 있고(먹이는 현장 구매), 유모차 무료 대여와 수유실이 있다고 안내됩니다. 만 5세 이하는 보호자가 각별히 주의하라고 안내됩니다.</small></div></li>
+        <li><time>17:00</time><div>제주 신라호텔로 이동 · 체크인 · 휴식 (약 40분)</div></li>
+        <li><time>18:45</time><div>저녁: 호텔 또는 가벼운 식사</div></li>
+      </ul>
+      <div class="cafebox"><h3>3일차 카페</h3><ul><li><b>카페아오오 (서귀포)</b> 오션뷰 카페. 2층 계단이 가팔라 아이 동반 시 주의. <a href="https://map.naver.com/p/search/%EC%B9%B4%ED%8E%98%EC%95%84%EC%98%A4%EC%98%A4%20%EC%84%9C%EA%B7%80%ED%8F%AC" target="_blank" rel="noopener">지도</a></li><li><b>휴일로 (서귀포)</b> 2층은 노키즈존, 1층과 야외만 아이와 이용. <a href="https://map.naver.com/p/search/%ED%9C%B4%EC%9D%BC%EB%A1%9C%20%EC%84%9C%EA%B7%80%ED%8F%AC" target="_blank" rel="noopener">지도</a></li></ul></div>
+      <p class="tip">서귀포 카페는 새연교와의 거리를 확인하지 못했습니다. 지도에서 점심 장소와 가까운 곳을 고르세요. 휴애리 입장 마감은 보통 폐장 1시간 30분 전입니다. 문의 064-732-2114 (검색 결과 기준).</p>
+      <div class="gallery"><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Daepo_Jusangjeolli_Cliff_01.jpg?width=640" alt="중문 대포 주상절리대"><figcaption>중문 주상절리대</figcaption></figure><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Saeyeongyo_Bridge_01.jpg?width=640" alt="새연교"><figcaption>새연교</figcaption></figure><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cheonjiyeon_Waterfall.JPG?width=640" alt="천지연폭포"><figcaption>천지연폭포</figcaption></figure><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seogwipo_Maeil_Olle_Market_02.jpg?width=640" alt="서귀포 매일올레시장"><figcaption>서귀포 매일올레시장</figcaption></figure><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%A0%9C%EC%A3%BC_%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80_%EC%A0%9C%EC%A3%BC_%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94_%281%29.jpg?width=640" alt="제주 신라호텔"><figcaption>오늘 묵는 제주 신라호텔</figcaption></figure></div>
+    </article>
+
+    <article class="day" style="--dc:var(--d4)">
+      <header><span class="tag">4일차 · 5/1(토)</span><h3 style="margin:0">정원 산책 · 오후 귀가</h3><span class="pace">여유</span></header>
+      <div class="gallery"><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%A0%9C%EC%A3%BC_%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80_%EC%97%AC%EB%AF%B8%EC%A7%80_%EC%8B%9D%EB%AC%BC%EC%9B%90.jpg?width=640" alt="여미지식물원"><figcaption>여미지식물원 (중문)</figcaption></figure><figure class="ph"><img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Jungmun_Saekdal_Beach,_South_Korea.jpg?width=640" alt="중문 색달해변"><figcaption>중문 색달해변</figcaption></figure></div>
+      <ul class="tl">
+        <li><time>08:30</time><div>신라호텔 조식 · 체크아웃<small>짐은 차에 싣습니다.</small></div></li>
+        <li><time>09:45</time><div><b>여미지식물원</b> (중문, 호텔에서 가까움)<small>온실이라 날씨와 상관없고 온실 안은 유모차로 다니기 무리가 없다는 후기가 있습니다. 어린이 정원도 있다고 소개됩니다. 요금과 마감 시간은 출처마다 달라 확인이 필요합니다.</small></div></li>
+        <li><time>11:30</time><div>카페: 색달해변 쪽 바다 보이는 카페<small>해변 모래놀이를 짧게 하고 쉽니다. 파도가 거칠 수 있어 물가는 보호자 동반.</small></div></li>
+        <li><time>12:30</time><div>점심 (중문)</div></li>
+        <li><time>13:30</time><div>공항 방향으로 이동 (약 50분)<small>여유가 되면 애월 방면 동물 먹이 체험장(예: 제주양떼목장)에 들를 수 있습니다. 24개월 미만 무료로 안내되어, 만 2세는 요금이 있을 수 있습니다.</small></div></li>
+        <li><time>15:15</time><div>주유 · 렌터카 반납<small>카시트 분리를 잊지 마세요.</small></div></li>
+        <li><time>16:00</time><div>제주공항 도착<small>토요일이라 혼잡할 수 있어 2시간 전 도착을 권장합니다.</small></div></li>
+        <li><time>18:00</time><div>비행기 출발</div></li>
+      </ul>
+      <div class="cafebox"><h3>4일차 카페</h3><ul><li><b>바다바라 (색달해변 위 언덕)</b> 바다가 넓게 보이는 카페. 아이 시설 정보는 확인하지 못했습니다. <a href="https://map.naver.com/p/search/%EB%B0%94%EB%8B%A4%EB%B0%94%EB%9D%BC%20%EC%A4%91%EB%AC%B8" target="_blank" rel="noopener">지도</a></li><li><b>호텔 라운지 카페</b> 시간이 빠듯하면 체크아웃 전에 호텔에서 마시기. <a href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94%20%EB%9D%BC%EC%9A%B4%EC%A7%80" target="_blank" rel="noopener">지도</a></li></ul></div>
+      <p class="tip">"대구공항 오후 6시"를 제주공항 18:00 출발 대구행으로 보고 짰습니다. 대구공항 도착이 18:00이라면 알려 주세요.</p>
+    </article>
+  </section>
+
+  <section id="food">
+    <h2>회와 고기</h2>
+    <p class="sub">식당 이름은 일부러 고정하지 않았습니다. 영업시간과 대기는 방문 직전에 지도 앱 리뷰로 확인하는 편이 정확합니다.</p>
+    <div class="grid2">
+      <div class="box"><h3>회</h3>
+        <ul>
+          <li>1일차 점심: 도두항 주변 횟집 (공항에서 가깝습니다)</li>
+          <li>3일차 점심: 서귀포항 근처 횟집 또는 올레시장</li>
+          <li>활어회가 부담스러우면 물회, 회덮밥, 고등어구이로 바꾸세요.</li>
+        </ul>
+      </div>
+      <div class="box"><h3>고기</h3>
+        <ul>
+          <li>2일차 저녁: 흑돼지 구이 (중문·서귀포 방면)</li>
+          <li>고기를 대신 구워주는 집이 아이 동반에 편합니다.</li>
+          <li>예약 시 아기 의자 유무, 칸막이 룸 여부를 물어보세요.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="stay">
+    <h2>숙소와 렌터카</h2>
+    <div class="grid2">
+      <div class="box"><h3>숙소: 중문 두 곳</h3>
+        <ul>
+          <li><b>하얏트 리젠시 제주</b> 2박 (1~2일차)</li>
+          <li><b>제주 신라호텔</b> 1박 (3일차)</li>
+          <li>두 곳 모두 중문 관광단지에 있어 3일차 오전 이동이 짧습니다. 순서는 바꿀 수 있습니다.</li>
+          <li>예약 전 확인: 4월 말 빈방, 4인 투숙 객실과 침구, 아기 침대(크립), 키즈 풀과 실내 풀 운영, 아이 조식 요금</li>
+        </ul>
+      </div>
+      <div class="box"><h3>렌터카와 카시트</h3>
+        <ul>
+          <li>차량: 4인 + 유모차 + 캐리어가 들어가는 중형 SUV 이상</li>
+          <li>카시트 2개: 만 2세용 유아 카시트, 5세용 주니어 카시트(또는 부스터)를 예약 때 신청</li>
+          <li>만 6세 미만은 카시트 착용이 법적 의무입니다.</li>
+          <li>쓰던 카시트를 가져가면 익숙해서 덜 보챕니다. 항공사 수하물 규정은 확인하세요.</li>
+          <li>토요일 반납이라 4월 말에도 물량이 빨리 찹니다. 일찍 확정하세요.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="cost">
+    <h2>예상 비용</h2>
+    <p class="sub">실제 요금을 조회한 값이 아니라 대략적인 추정이며, 입장료 두 곳만 검색 결과 기준입니다. 예약 가격이 나오면 바꿔서 계산하세요.</p>
+    <div class="callout"><span class="cap">4인 가족 3박 4일 예상 합계</span><p class="big">약 270만 ~ 440만 원</p><p>호텔 조식을 따로 내면 36만 ~ 54만 원이 더 듭니다.</p></div>
+    <div class="scroll"><table>
+      <thead><tr><th>항목</th><th>예상 비용</th><th>계산 근거</th></tr></thead>
+      <tbody>
+        <tr><td>항공권 (대구-제주 왕복)</td><td class="num">55만 ~ 90만</td><td>어른 2 + 아이 2 (만 2세도 좌석 구매), 수요일 출발, 토요일 18:00 귀가</td></tr>
+        <tr><td>숙박</td><td class="num">85만 ~ 140만</td><td>하얏트 2박(평일) 50~80만 + 신라 1박(금요일) 35~60만</td></tr>
+        <tr><td>렌터카 4일</td><td class="num">25만 ~ 40만</td><td>중형 SUV, 자차 보험 포함</td></tr>
+        <tr><td>카시트 2개</td><td class="num">4만 ~ 8만</td><td>하루 단위 청구가 많음</td></tr>
+        <tr><td>주유</td><td class="num">3만 ~ 5만</td><td>4일 이동 약 250km 가정</td></tr>
+        <tr><td>식사 (점심·저녁 7끼)</td><td class="num">55만 ~ 90만</td><td>회 10~15만, 흑돼지 10~15만, 일반 5~8만 (한 끼)</td></tr>
+        <tr><td>입장료·체험</td><td class="num">22만 ~ 30만</td><td>박물관, 뽀로로앤타요, 휴애리, 여미지식물원 포함. 아래 상세 참고</td></tr>
+        <tr><td>카페 (4일, 하루 1~2곳)</td><td class="num">8만 ~ 12만</td><td>어른 음료 2잔 + 아이 음료·아이스크림 기준 하루 2~3만 원</td></tr>
+        <tr><td>시장 간식, 음료</td><td class="num">3만 ~ 5만</td><td>올레시장, 카페</td></tr>
+        <tr><td>기타 (기념품, 비상금)</td><td class="num">10만 ~ 20만</td><td></td></tr>
+        <tr class="total"><td>합계</td><td class="num">약 270만 ~ 440만</td><td>단위: 원</td></tr>
+        <tr><td>(참고) 호텔 조식 별도</td><td class="num">+36만 ~ 54만</td><td>3일, 어른 2 + 아이 2. 조식 포함 요금이면 0원</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 class="sec">입장료 상세</h3>
+    <div class="scroll"><table>
+      <thead><tr><th>장소</th><th>요금</th><th>비고</th></tr></thead>
+      <tbody>
+        <tr><td>세계자동차&amp;피아노박물관</td><td class="num">성인 13,000 / 어린이 12,000</td><td>검색 결과 기준. 만 2세는 무료 또는 할인일 수 있어 확인 필요. 약 3.8만 ~ 5만 원</td></tr>
+        <tr><td>뽀로로앤타요 테마파크 제주</td><td class="num">성인 30,000 / 어린이 40,000</td><td>종합 이용권, 검색 결과 기준. 만 2세 요금 확인 필요. 어른 2 + 5세 1명이면 약 10만 원</td></tr>
+        <tr><td>휴애리 자연생활공원</td><td class="num">성인 13,000 / 청소년 11,000 / 소인 10,000</td><td>검색 결과 기준. 만 2세 요금 확인 필요. 어른 2 + 5세 1명이면 약 3.6만 원. 먹이는 현장 구매</td></tr>
+        <tr><td>여미지식물원</td><td class="num">성인 10,000~12,000 / 어린이 6,000~7,000</td><td>출처마다 요금이 달라 범위로 적음. 어른 2 + 5세 1명이면 약 3.2~4.3만 원</td></tr>
+        <tr><td>오설록 티뮤지엄 (차밭 산책)</td><td class="num">무료</td><td>검색 결과 기준. 체험 프로그램은 별도 요금. 카페 비용은 카페 항목에 포함</td></tr>
+        <tr><td>천지연폭포, 주상절리대, 새연교</td><td class="num">소액 또는 무료</td><td>추정. 아이 무료 가능성</td></tr>
+        <tr><td>제주양떼목장 (선택)</td><td class="num">먹이 체험 1,000원대</td><td>24개월 미만 무료로 안내되어 만 2세는 요금 가능</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 class="sec">줄이는 방법</h3>
+    <div class="box"><ul>
+      <li>호텔 조식 포함 요금이나 회원 요금을 먼저 비교합니다.</li>
+      <li>저녁 한 끼를 룸서비스나 포장으로 바꾸면 식비가 줄어듭니다.</li>
+      <li>뽀로로앤타요는 온라인 할인가나 시간대 요금이 있으면 사전 예매합니다.</li>
+      <li>카시트를 직접 가져가면 대여료가 들지 않습니다. 항공사 수하물 규정은 확인하세요.</li>
+    </ul></div>
+  </section>
+
+  <section id="todo" class="dark">
+    <h2>내가 해야 할 것 3가지</h2>
+    <p class="sub">이 세 가지만 하면 나머지는 일정대로 움직입니다.</p>
+    <ol class="todo">
+      <li><b>예약 3가지:</b> 왕복 항공권(만 2세 좌석 포함), 호텔 2곳(4/28~4/30 하얏트 리젠시 제주, 4/30~5/1 제주 신라호텔), 렌터카(중형 SUV 이상 + 카시트 2개). 5/1이 토요일이라 일찍 잡으세요.</li>
+      <li><b>2일차·3일차 4곳에 전화:</b> 세계자동차&amp;피아노박물관(064-792-3000), 뽀로로앤타요 테마파크(064-742-8555), 휴애리(064-732-2114)에 만 2세 이용 가능 여부와 나이·키 제한, 운영시간을 확인합니다. 수국이 그 주에 피었는지도 휴애리에 물어보세요. 번호는 검색 결과 기준입니다.</li>
+      <li><b>귀가편과 서류:</b> "오후 6시"가 제주공항 출발인지 확인하고, 아이 둘의 신분 확인 서류(등본 또는 의료보험증 등)를 준비합니다.</li>
+    </ol>
+  </section>
+
+  <section id="pack">
+    <h2>준비물</h2>
+    <p class="sub">눌러서 체크하면 이 기기에 저장됩니다.</p>
+    <div class="progress" id="progress" aria-live="polite"></div>
+    <div class="pack" id="pack-list"></div>
+  </section>
+</div>
+
+<footer class="site-foot"><div class="inner">
+  <strong>제주 가족 3박4일</strong>
+  <p>2027.4.28(수) ~ 5.1(토) · 운영시간, 휴무, 요금, 호텔 시설은 바뀔 수 있어 확정 정보가 아닙니다. 예약과 방문 전에 공식 안내를 확인하세요. 좌표와 이동 시간은 약식입니다.</p>
+  <details><summary>사진 출처 (Wikimedia Commons)</summary>
+    <ul>
+      <li>하얏트 리젠시 제주: UggBoy♥UggGirl, CC BY 2.0</li>
+      <li>중문 대포 주상절리대, 새연교: Bgag, CC0</li>
+      <li>천지연폭포: Abasaa, 퍼블릭 도메인</li>
+      <li>서귀포 매일올레시장: Seefooddiet, CC BY-SA 4.0</li>
+      <li>제주 신라호텔: 대한민국역사박물관 현대사아카이브, 공공누리 제1유형</li>
+      <li>색달해변: Giuseppe Milo, CC BY 2.0</li>
+      <li>오설록 티뮤지엄: Matt Kieffer, CC BY-SA 2.0</li>
+      <li>여미지식물원: 대한민국역사박물관 현대사아카이브, 공공누리 제1유형</li>
+    </ul>
+  </details>
+</div></footer>
+<script>
+(function () {
+  var DAYS = { 1: "var(--d1)", 2: "var(--d2)", 3: "var(--d3)", 4: "var(--d4)" };
+  // [id, 이름, 위도, 경도, 일차목록, 설명, 지도라벨위치]
+  var P = {
+    air:  { n: "제주공항", la: 33.5113, lo: 126.4930, note: "도착과 출발, 렌터카 수령·반납", lab: "t" },
+    dodu: { n: "도두 무지개해안도로", la: 33.5075, lo: 126.4620, note: "해안 산책, 점심, 근처 바닷가 카페", lab: "t" },
+    hotel:{ n: "중문 호텔", q: "중문관광단지", la: 33.2480, lo: 126.4100, note: "1~2일차 하얏트 리젠시, 3일차 신라호텔 (모두 중문)", lab: "b" },
+    car:  { n: "세계자동차&피아노박물관", q: "세계자동차&피아노박물관", la: 33.3200, lo: 126.3750, note: "사슴·토끼 먹이 주기, 어린이 교통 체험 (약식 위치)", lab: "l" },
+    pororo:{ n: "뽀로로앤타요 테마파크", q: "뽀로로앤타요테마파크 제주", la: 33.2880, lo: 126.3480, note: "타요·뽀로로 탈것 (약식 위치)", lab: "l", off: [0, 8] },
+    osul: { n: "오설록 티뮤지엄", q: "오설록 티뮤지엄", la: 33.3057, lo: 126.2895, note: "녹차밭 산책, 카페 (약식 위치)", lab: "l" },
+    jusang:{ n: "중문 주상절리대", la: 33.2375, lo: 126.4250, note: "호텔 인근 전망 산책", lab: "r", off: [22, 14] },
+    saeyeon:{ n: "새연교", la: 33.2393, lo: 126.5594, note: "새섬까지 가벼운 산책", lab: "b" },
+    olle: { n: "서귀포 매일올레시장", la: 33.2506, lo: 126.5640, note: "회 점심, 간식", lab: "r" },
+    cheon:{ n: "천지연폭포", la: 33.2467, lo: 126.5547, note: "계단 있음, 아기띠 권장", lab: "t" },
+    hue:  { n: "휴애리 자연생활공원", q: "휴애리 자연생활공원", la: 33.2950, lo: 126.6000, note: "수국 정원, 동물 먹이 주기 (약식 위치)", lab: "t" },
+    yeo:  { n: "여미지식물원", q: "여미지식물원", la: 33.2480, lo: 126.4100, note: "온실과 정원, 호텔에서 가까움", lab: "t", off: [10, -26] },
+    saek: { n: "색달해변", la: 33.2455, lo: 126.4000, note: "모래놀이와 바다 보이는 카페", lab: "l", off: [-24, 14] }
+  };
+  var ROUTE = {
+    1: ["air", "dodu", "hotel"],
+    2: ["hotel", "car", "pororo", "osul", "hotel"],
+    3: ["hotel", "jusang", "saeyeon", "olle", "cheon", "hue", "hotel"],
+    4: ["hotel", "yeo", "saek", "air"]
+  };
+  function PX(k) { var p = P[k], o = p.off || [0, 0]; return [X(p.lo) + o[0], Y(p.la) + o[1]]; }
+  var OUTLINE = [[126.53,33.515],[126.65,33.550],[126.78,33.555],[126.90,33.530],[126.945,33.465],[126.90,33.385],[126.83,33.320],[126.67,33.270],[126.56,33.235],[126.45,33.230],[126.36,33.215],[126.28,33.205],[126.18,33.265],[126.165,33.330],[126.24,33.410],[126.31,33.465],[126.40,33.505],[126.46,33.515]];
+  var W = 640, H = 480;
+  function X(lo) { return (lo - 126.10) / 0.90 * W; }
+  function Y(la) { return (33.62 - la) / 0.57 * H; }
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("svg");
+  function el(tag, attrs, parent) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    (parent || svg).appendChild(e);
+    return e;
+  }
+  // 섬 외곽: Catmull-Rom 닫힌 곡선
+  function island() {
+    var pts = OUTLINE.map(function (p) { return [X(p[0]), Y(p[1])]; });
+    var n = pts.length, d = "M" + pts[0][0].toFixed(1) + "," + pts[0][1].toFixed(1);
+    for (var i = 0; i < n; i++) {
+      var p0 = pts[(i - 1 + n) % n], p1 = pts[i], p2 = pts[(i + 1) % n], p3 = pts[(i + 2) % n];
+      var c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+      var c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+      d += "C" + c1x.toFixed(1) + "," + c1y.toFixed(1) + " " + c2x.toFixed(1) + "," + c2y.toFixed(1) + " " + p2[0].toFixed(1) + "," + p2[1].toFixed(1);
+    }
+    return d + "Z";
+  }
+  var cur = 0;
+  function draw() {
+    svg.textContent = "";
+    el("path", { d: island(), fill: "var(--land)", stroke: "var(--muted)", "stroke-width": "1.5", "stroke-linejoin": "round" });
+    var t = el("text", { x: X(126.62), y: Y(33.40), "text-anchor": "middle", fill: "var(--muted)", "font-size": "15", "font-weight": "700", opacity: "0.55", "letter-spacing": "6" });
+    t.textContent = "제 주 도";
+    var c = el("text", { x: 18, y: 28, fill: "var(--muted)", "font-size": "12" }); c.textContent = "북 ↑";
+    var days = cur ? [cur] : [1, 2, 3, 4];
+    var seen = {}, order = {};
+    days.forEach(function (d) {
+      var r = ROUTE[d], pts = r.map(function (k) { var q = PX(k); return q[0].toFixed(1) + "," + q[1].toFixed(1); }).join(" ");
+      el("polyline", { points: pts, fill: "none", stroke: DAYS[d], "stroke-width": "2.5", "stroke-dasharray": "7 5", "stroke-linecap": "round", "stroke-linejoin": "round", opacity: cur ? "0.95" : "0.7" });
+      r.forEach(function (k, i) { if (k !== "hotel" && k !== "air") { seen[k] = d; order[k] = i; } else seen[k] = seen[k] || d; });
+    });
+    Object.keys(seen).forEach(function (k) {
+      var p = P[k], xy = PX(k), x = xy[0], y = xy[1], isH = k === "hotel", isA = k === "air";
+      var col = isH ? "var(--hotel)" : isA ? "var(--muted)" : DAYS[seen[k]];
+      var g = el("g", {});
+      el("circle", { cx: x, cy: y, r: isH ? 11 : 9, fill: col, stroke: "var(--card)", "stroke-width": "2.5" }, g);
+      var lbl = isH ? "H" : isA ? "✈" : String(order[k]);
+      var tx = el("text", { x: x, y: y + 4, "text-anchor": "middle", "font-size": "11", "font-weight": "700", fill: "var(--card)" }, g);
+      tx.textContent = lbl;
+      var dx = 0, dy = 0, anchor = "middle";
+      if (p.lab === "t") { dy = -15; } else if (p.lab === "b") { dy = 24; } else if (p.lab === "l") { dx = -15; dy = 4; anchor = "end"; } else { dx = 15; dy = 4; anchor = "start"; }
+      var tt = el("text", { x: x + dx, y: y + dy, "text-anchor": anchor, "font-size": "13", "font-weight": "700", fill: "var(--fg)", stroke: "var(--land)", "stroke-width": "4", "paint-order": "stroke", "stroke-linejoin": "round" }, g);
+      tt.textContent = p.n;
+    });
+  }
+  function list() {
+    var ul = document.getElementById("stops"); ul.textContent = "";
+    var days = cur ? [cur] : [1, 2, 3, 4];
+    days.forEach(function (d) {
+      var done = {};
+      ROUTE[d].forEach(function (k, i) {
+        if (done[k]) return; done[k] = 1;
+        var p = P[k], li = document.createElement("li");
+        var isH = k === "hotel", isA = k === "air";
+        li.style.setProperty("--pc", isH ? "var(--hotel)" : isA ? "var(--muted)" : DAYS[d]);
+        var q = encodeURIComponent(p.q || p.n);
+        li.innerHTML = '<div class="top"><span class="pin">' + (isH ? "H" : isA ? "✈" : i) + '</span><b>' + d + '일차 · ' + p.n + '</b></div><small>' + p.note + '</small>' +
+          '<div class="links"><a href="https://map.naver.com/p/search/' + q + '" target="_blank" rel="noopener">네이버 지도</a><a href="https://map.kakao.com/?q=' + q + '" target="_blank" rel="noopener">카카오맵</a></div>';
+        ul.appendChild(li);
+      });
+    });
+  }
+  var chips = document.getElementById("chips");
+  [["전체", 0], ["1일차", 1], ["2일차", 2], ["3일차", 3], ["4일차", 4]].forEach(function (c) {
+    var b = document.createElement("button"); b.type = "button"; b.className = "chip";
+    b.innerHTML = (c[1] ? '<i style="background:' + DAYS[c[1]] + '"></i>' : "") + c[0];
+    b.setAttribute("aria-pressed", c[1] === 0 ? "true" : "false");
+    b.addEventListener("click", function () {
+      cur = c[1];
+      Array.prototype.forEach.call(chips.children, function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      draw(); list();
+    });
+    chips.appendChild(b);
+  });
+  draw(); list();
+
+  // 준비물
+  var PACK = [
+    ["서류·결제", ["신분증 (어른)", "아이 둘 신분 확인 서류 (등본 또는 의료보험증 등, 항공사 기준 확인)", "렌터카용 운전면허증", "항공권·숙소·렌터카 예약 화면 캡처", "카드·현금 약간"]],
+    ["아이 이동·안전", ["카시트 2개 (렌터카 신청 또는 지참)", "유모차 (접이식) 또는 아기띠", "아이 손목 이름표·연락처 메모", "차에서 쓸 목베개·담요", "멀미약 또는 멀미 봉투"]],
+    ["위생·건강", ["기저귀·물티슈 (여유분)", "상비약: 해열제, 소화제, 연고, 밴드", "체온계", "손 소독제, 마스크", "평소 먹는 약, 아이 건강보험증"]],
+    ["식사·간식", ["이유식·간식·젤리 (비행기 이륙 때 귀 아플 때 쓰기)", "아이 물병·빨대컵", "아이 수저·턱받이", "여분 비닐봉지와 지퍼백"]],
+    ["놀이·진정", ["동물 먹이 체험 후 쓸 손 소독제·물티슈", "좋아하는 인형·애착 물건", "스티커북, 색칠 도구, 작은 장난감", "태블릿과 이어폰, 충전 케이블", "모래놀이 도구 (색달해변)", "젖었을 때 갈아 신길 여벌 신발", "꽃밭·차밭용 벌레 기피제 (선택)"]],
+    ["의류·물놀이", ["아이 여벌 옷 (하루 2~3벌)", "수영복, 수영 기저귀, 래시가드, 수건", "슬리퍼·물놀이 신발", "얇은 겉옷과 바람막이 (바닷바람 대비)", "모자, 선크림, 선글라스"]],
+    ["어른 개인", ["충전기, 보조배터리", "카메라 또는 휴대폰 거치대", "세면도구 (호텔 기본품 외)", "편한 신발", "접이식 우산 또는 우비"]],
+    ["4월 말~5월 초 날씨", ["얇은 긴팔과 반팔을 겹쳐 입기 (아침저녁 쌀쌀)", "바닷바람 대비 바람막이", "봄비 대비 우비와 접이식 우산", "자외선 차단제, 모자"]]
+  ];
+  var KEY = "jeju-trip-pack-v3", saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { saved = {}; }
+  var host = document.getElementById("pack-list"), total = 0;
+  PACK.forEach(function (g, gi) {
+    var box = document.createElement("div"); box.className = "box";
+    var h = document.createElement("h3"); h.textContent = g[0]; box.appendChild(h);
+    g[1].forEach(function (txt, i) {
+      total++;
+      var id = "pk-" + gi + "-" + i;
+      var lab = document.createElement("label"); lab.setAttribute("for", id);
+      var inp = document.createElement("input"); inp.type = "checkbox"; inp.id = id; inp.checked = !!saved[id];
+      var sp = document.createElement("span"); sp.textContent = txt;
+      inp.addEventListener("change", function () {
+        saved[id] = inp.checked;
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+        count();
+      });
+      lab.appendChild(inp); lab.appendChild(sp); box.appendChild(lab);
+    });
+    host.appendChild(box);
+  });
+  function count() {
+    var n = host.querySelectorAll("input:checked").length;
+    document.getElementById("progress").textContent = "챙긴 물건 " + n + " / " + total;
+  }
+  count();
+})();
+</script>
+</body>
+</html>
